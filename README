@@ -1,0 +1,77 @@
+# Introduction
+
+Welcome to anubis, the research & development machine for the JuliaLang project.
+This machine is available to all user with commit access to JuliaLang/julia, as
+well as other members of the community by invitation. It is maintained by @Keno
+and generously hosted by Julia Computing.
+
+This and other documents are available at
+
+            https://github.com/Keno/anubis.juliacomputing.com
+
+You are invited to submit a pull request there, to correct any mistakes, or add
+additional information.
+
+Additionally, issues on that repository may be used for support requests (though
+please ping @Keno in addition)
+
+Please NOTE: This machine is dedicated to research and development related to
+the Julia programming language. All other uses require explicit permission (
+email @Keno).
+
+# Accounts
+
+Accounts are automatically synced over from GitHub, including authorized SSH
+keys. At present, $HOME/.ssh/authorized_keys will be overwritten for each user
+when this happens (to make sure keys that get revoked from GitHub get removed).
+
+# Description of the machine
+
+## CPU & RAM
+
+The machine houses 8 10-core Intel Westmere Xeon E7-8850 processors.
+Each processor is a NUMA domain with direct access to 128GB DDR3 EEC memory,
+for a total maximum capacity of 1TB (Currently only 960GB are populated, pending
+replacement of broken modules).
+
+## Disks
+
+The machine houses 10 disks, with a total capacity of 8TB. They are configured
+as follows:
+
+- / - Boot disk (1x) - 512GB
+- /home - Home directories - 512GB RAID1
+- /data - 6TB BTRFS Volume (RAID0)
+
+Each user has one directory under /home and one directory under /data for their
+own private use.
+
+In particular, please note that home directory space is limited. It should thus
+be restricted to configuration files and source code. Large data sets or build
+artifacts are better placed under /data (with the caveat that disk failure will
+cause data loss).
+
+There are additional slots in the machine, so storage may be upgraded over time.
+
+## Network
+
+The machine has a 30Mbps unmetered cross connect to Cogent's Tier 1 network.
+The bandwidth is decent, but probably insufficient for large (100GBs-TBs) data
+transfers. If you run into this limitation, please let me know, so we can look
+for alternative options.
+
+## Power (IMPORTANT!!)
+As you may imagine, this machine is VERY power hungry. It is being fed by a
+dedicated 20A circuit (17A) max load. This is sufficient for running the machine
+continously with 80cores under normal workloads (compile, etc...), but not for
+certain torture tests (e.g. mprime). Please DO NOT run such tests. You will trip
+the breaker, which will require me to call up the data center to reset it (so
+the machine will be off for some time). If you want to run non-standard
+workloads on many cores, please get in touch first, so we can look at the power
+requirements.
+
+# Other considerations
+
+This machine is shared, please be considerate. Taking up large parts of the
+machine in bursts (e.g. compiling LLVM) is ok, but doing so for long periods
+of time without prior notice is not.

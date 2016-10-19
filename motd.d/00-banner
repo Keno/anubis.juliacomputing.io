@@ -1,0 +1,11 @@
+#!/bin/sh
+
+tx="\033[0m\033[0m" # text
+jl="\033[0m\033[1m" # julia
+d1="\033[34m" # first dot
+d2="\033[31m" # second dot
+d3="\033[32m" # third dot
+d4="\033[35m" # fourth dot
+
+printf "$d2⬤$tx $d3⬤$tx | Welcome to $(hostname). This is a Julia Computing System\n"
+printf "$d1⬤$tx $d4⬤$tx | New users should read /README before proceeding\n"

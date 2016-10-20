@@ -69,7 +69,7 @@ for alternative options.
 
 ## Power (IMPORTANT!!)
 As you may imagine, this machine is VERY power hungry. It is being fed by a
-dedicated 20A circuit (17A) max load. This is sufficient for running the machine
+dedicated 20A circuit (17A max load). This is sufficient for running the machine
 continously with 80cores under normal workloads (compile, etc...), but not for
 certain torture tests (e.g. mprime). Please DO NOT run such tests. You will trip
 the breaker, which will require me to call up the data center to reset it (so

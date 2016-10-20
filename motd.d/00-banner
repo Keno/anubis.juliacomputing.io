@@ -8,4 +8,4 @@ d3="\033[32m" # third dot
 d4="\033[35m" # fourth dot
 
 printf "$d2⬤$tx $d3⬤$tx | Welcome to $(hostname). This is a Julia Computing System\n"
-printf "$d1⬤$tx $d4⬤$tx | New users should \`cat /README | less\` before proceeding\n"
+printf "$d1⬤$tx $d4⬤$tx | New users MUST \`cat /README | less\` before proceeding\n"

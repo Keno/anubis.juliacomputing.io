@@ -32,6 +32,12 @@ Accounts are automatically synced over from GitHub, including authorized SSH
 keys. At present, $HOME/.ssh/authorized_keys will be overwritten for each user
 when this happens (to make sure keys that get revoked from GitHub get removed).
 
+## Installing packages
+
+`sudo` access is not enabled for accounts by default. However, all accounts are
+automatically authorized to install any package from the default ubuntu software
+repository. This can be done using `pkcon install` instead of `apt-get install`.
+
 # Description of the machine
 
 ## CPU & RAM

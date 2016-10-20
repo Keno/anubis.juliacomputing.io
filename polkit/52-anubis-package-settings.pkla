@@ -1,0 +1,4 @@
+[JuliaLang/JuliaComputing users are allowed to install packages]
+Identity=unix-group:julialang;unix-group:juliacomputing
+Action=org.freedesktop.packagekit.package-remove;org.freedesktop.packagekit.package-install
+ResultAny=auth_self_keep

@@ -26,5 +26,9 @@ for (orgname, teamname, group) in [("JuliaLang","Contributors","julialang"),
         run(`sudo chown -R $username:$username /home/$username/.ssh`)
         run(`sudo chmod 600 /home/$username/.ssh/authorized_keys`)
         run(`sudo chmod 700 /home/$username/.ssh`)
+        # Create data directory
+        run(`sudo mkdir -p /data/$username`)
+        run(`sudo chown -R $username:$username /data/$username`)
+        run(`sudo chmod 775 /data/$username`)
     end
 end

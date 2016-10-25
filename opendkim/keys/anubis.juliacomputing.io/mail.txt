@@ -1,0 +1,2 @@
+mail._domainkey	IN	TXT	( "v=DKIM1; k=rsa; "
+	  "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDtnZthtM1hXzuYJOoLAP4UV7o6YbKdoZ7AFLyvWFYd6/DbzpxPvjeu0JGjaTp9xRjkbZ+YVEvD//GoZgGIHPS8WGkHf/Oa9JctStdZfKLFOqCz2EO+drmCyeCfJElsAcZ18u1fJEuuyEpHeVB2QOWVtz21NfOqnlCDcrQFY22mPQIDAQAB" )  ; ----- DKIM key mail for anubis.juliacomputing.io

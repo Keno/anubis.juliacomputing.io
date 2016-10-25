@@ -53,8 +53,8 @@ The machine houses 10 disks, with a total capacity of 8TB. They are configured
 as follows:
 
 - / - Boot disk (1x) - 512GB
-- /home - Home directories - 512GB RAID1
-- /data - 6TB BTRFS Volume (RAID0)
+- /home - Home directories - 1TB software RAID1
+- /data - 8TB BTRFS Volume (RAID0)
 
 Each user has one directory under /home and one directory under /data for their
 own private use.

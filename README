@@ -1,7 +1,7 @@
 # Introduction
 
 Welcome to anubis, the research & development machine for the JuliaLang project.
-This machine is available to all user with commit access to JuliaLang/julia, as
+This machine is available to all users with commit access to JuliaLang/julia, as
 well as other members of the community by invitation. It is maintained by @Keno
 and generously hosted by Julia Computing.
 
